@@ -15,6 +15,10 @@ router.get("/test", (req, res) => res.json({ msg: "users works" }));
 // @desc    Register user
 // @access  Public
 router.post("/register", (req, res) => {
+  const { email, password } = req.body;
+  if (!email || !password) {
+    return res.send("Must include email and password");
+  }
   User.findOne({ email: req.body.email }).then(user => {
     if (user) {
       return res.status(400).json({ email: "Email already exists" });
