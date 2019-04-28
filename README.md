@@ -42,13 +42,14 @@ An learning oriented, MERN stack demo Project to practice Full Stack Web app dev
 
 ## Some cool stuff
 
-Work In progress... Cool stuff will go here don't worry, lol 
+Work In progress... Cool stuff will go here don't worry, lol
+
 ```javascript
-  // There will be some cool code here too
+// There will be some cool code here too
 ```
 
 ```javascript
-  // And also here
+// And also here
 ```
 
 ## Features in Development
