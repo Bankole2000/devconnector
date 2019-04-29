@@ -1,6 +1,6 @@
 # DevConnector 1.0
 
-Social Network application for developers, built on the MERN stack (Work In Progress). [Demo Currently Unavailable](https://bankole2000.github.io/devconnector)
+Social Network application for developers, being built on the MERN stack (Work In Progress). [Demo Currently Unavailable](https://bankole2000.github.io/devconnector)
 
 [![Practice](https://img.shields.io/badge/Practice-JavaScript-yellow.svg)](https://bankole2000.github.io/devconnector)
 
@@ -10,9 +10,9 @@ _<p align="center">"Thanos Snapped..."</p>_
 <img align="center" src="https://i.imgur.com/WGO3ULK.png" width="150"/>
 </div>
 
-## What it is
+## What it is (or will be)
 
-An learning oriented, MERN stack demo Project to practice Full Stack Web app development. A basic social Network for develpers, built with:
+A learning oriented, MERN stack demo Project to practice Full Stack Web app development. A basic social Network for develpers, to be built with:
 
 - MongoDB
 - Mongoose
@@ -28,7 +28,7 @@ An learning oriented, MERN stack demo Project to practice Full Stack Web app dev
 - Vanilla JS - ES6
 - [Awesomeness](https://www.wikihow.com/Love-Programming) - Strictly for the love of coding _Mehn!_
 
-## What it does
+## What it will do
 
 - User Registration and Authentication
 - Extensive User Profiles
@@ -39,6 +39,33 @@ An learning oriented, MERN stack demo Project to practice Full Stack Web app dev
 ## Learning Points
 
 - Like... A whoooole lot, lol. I'll write em out soon enough
+
+## Issues
+
+Encoutered errors logging into MongoDB Atlas.
+
+1. First error
+
+```javascript
+name: 'MongoNetworkError',
+  errorLabels: [ 'TransientTransactionError' ],
+  [Symbol(mongoErrorContextSymbol)]: {}
+```
+
+**how to fix**: Check that IP address is White listed On Cloud mongoDB hosting (or just use `allow all IP addresses` and be done with that)
+
+2. Second Error
+
+```javascript
+ok: 0,
+  errmsg: 'bad auth Authentication failed.',
+  code: 8000,
+  codeName: 'AtlasError',
+  name: 'MongoError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+```
+
+**how to fix**: Check collection database login details in mongoDB connection string. (Make sure your details - database username and password) - in the connection string are correct.
 
 ## Some cool stuff
 
