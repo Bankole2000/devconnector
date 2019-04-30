@@ -30,8 +30,7 @@ const ProfileSchema = new Schema({
     required: true
   },
   bio: {
-    type: String,
-    required: true
+    type: String
   },
   githubusername: {
     type: String
@@ -41,78 +40,74 @@ const ProfileSchema = new Schema({
       title: {
         type: String,
         required: true
+      },
+      company: {
+        type: String
+      },
+      location: {
+        type: String
+      },
+      from: {
+        type: String,
+        required: true
+      },
+      to: {
+        type: Date
+      },
+      current: {
+        type: Boolean,
+        default: false
+      },
+      description: {
+        type: String
       }
-    company: {
-      type: String
-    },
-    location: {
-      type: String
-    },
-    from: {
-      type: String, 
-      required: true
-    },
-    to: {
-      type: Date
-    },
-    current: {
-      type: Boolean, 
-      default: false
-    },
-    description:{
-      type: String
     }
-  }
   ],
   education: [
     {
       school: {
         type: String,
         required: true
+      },
+      degree: {
+        type: String,
+        required: true
+      },
+      fieldofstudy: {
+        type: String,
+        required: true
+      },
+      from: {
+        type: String,
+        required: true
+      },
+      to: {
+        type: Date
+      },
+      current: {
+        type: Boolean,
+        default: false
+      },
+      description: {
+        type: String
       }
-    degree: {
-      type: String, 
-      required: true
-    },
-    fieldofstudy: {
-      type: String,
-      required: true
-    },
-    from: {
-      type: String, 
-      required: true
-    },
-    to: {
-      type: Date
-    },
-    current: {
-      type: Boolean, 
-      default: false
-    },
-    description:{
-      type: String
     }
-  }
   ],
   social: {
     youtube: {
-      type: string
+      type: String
     },
     twitter: {
-      type: string
+      type: String
     },
     facebook: {
-      type: string
+      type: String
     },
     linkedin: {
-      type: string
+      type: String
     },
     instagram: {
-      type: string
-    },
-    date: {
-      type: Date, 
-      default: Date.now
+      type: String
     }
   }
 });
