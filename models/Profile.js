@@ -42,13 +42,14 @@ const ProfileSchema = new Schema({
         required: true
       },
       company: {
-        type: String
+        type: String,
+        required: true
       },
       location: {
         type: String
       },
       from: {
-        type: String,
+        type: Date,
         required: true
       },
       to: {
@@ -78,7 +79,7 @@ const ProfileSchema = new Schema({
         required: true
       },
       from: {
-        type: String,
+        type: Date,
         required: true
       },
       to: {
@@ -109,6 +110,10 @@ const ProfileSchema = new Schema({
     instagram: {
       type: String
     }
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 });
 
